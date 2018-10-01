@@ -401,7 +401,7 @@ done:
 }
 
 static const char *const http_like[] =
-    {"http", "https", "mmsh", "mmshttp", "httproxy", NULL};
+    {"http", "https", "mmsh", "mmshttp", "httproxy", "mtsp", NULL};
 
 const stream_info_t stream_info_ffmpeg = {
   .name = "ffmpeg",
@@ -409,7 +409,7 @@ const stream_info_t stream_info_ffmpeg = {
   .protocols = (const char *const[]){
      "rtmp", "rtsp", "http", "https", "mms", "mmst", "mmsh", "mmshttp", "rtp",
      "httpproxy", "rtmpe", "rtmps", "rtmpt", "rtmpte", "rtmpts", "srtp",
-     "data",
+     "data", "mtsp",
      NULL },
   .can_write = true,
   .is_safe = true,
